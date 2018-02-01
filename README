@@ -1,0 +1,14 @@
+There are two .cpp files:
+1. suffix_array.cpp: This has implementation of construction of suffix array and then searching a pattern in it. Following are the steps for usage:
+g++ suffix_array.cpp -o suffix_array
+suffix_array <Name of Text File>
+
+Ex: suffix_array SampleTextFile_10kb.txt
+You will be prompted to then enter a pattern to search in the suffix array. If the pattern exists, then the index of its first occurence will be displayed. Enter "q" to quit.
+
+2. suffix_tree.cpp: This has implementation of construction of suffix_tree and then searching a pattern in it. Following are the steps for usage:
+g++ suffix_tree.cpp -o suffix_tree
+suffix_tree <Name of Text File>
+
+Ex: suffix_tree small_file.txt
+The abve implementation works only for very small files. We have attached a small_file.txt for this. You will be prompted to enter a pattern to search in the suffix tree. In this part, we only display if the pattern exists or not. Enter "q" to quit.
